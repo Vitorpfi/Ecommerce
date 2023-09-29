@@ -6,8 +6,6 @@ COPY . /project
 
 WORKDIR /project
 
-RUN mvn clean package
-
 FROM adoptopenjdk/openjdk11:jre-11.0.15_10-alpine
 
 RUN mkdir /app
