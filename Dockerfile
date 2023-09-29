@@ -18,6 +18,6 @@ ENV PROFILE=dev
 
 WORKDIR /app
 
-EXPOSE 9080
+EXPOSE 9080 
 
 ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-war", "app.war"]
